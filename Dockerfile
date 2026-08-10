@@ -17,7 +17,7 @@ ARG OPENGREP_VERSION=v1.26.0
 # override, e.g.: docker build --build-arg TRIVY_IMAGE=aquasec/trivy:0.73.0 .
 # TRIVY_VERSION feeds the image label — keep it in sync with the TRIVY_IMAGE tag.
 ARG TRIVY_VERSION=0.73.0
-ARG TRIVY_IMAGE=ghcr.io/socketdev/trivy:0.73.0@sha256:e3d9d5f10250cb73b0ea9446ae1191c0f2da2f5e6173eac08a840b1812f02e0b
+ARG TRIVY_IMAGE=docker.io/aquasec/trivy:0.73.0
 
 # ─── Stage: trivy (Socket-built redistribution) ───────────────────────────────
 FROM ${TRIVY_IMAGE} AS trivy
